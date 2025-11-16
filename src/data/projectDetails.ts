@@ -376,7 +376,7 @@ export const projectDetails: Record<string, Project> = {
     description:
       "A fully branded portfolio website showcasing a coherent visual identity, modern UI, and professional-level presentation.",
     longDescription:
-      "This professional portfolio demonstrates a cohesive visual identity, polished UX/UI, and interactive design powered by modern frontend technologies. Built with React, Vite, and Tailwind CSS, it integrates advanced animations, 3D elements, and distortion effects using Framer Motion, React‑Three‑Fiber, and react-fluid-distortion. The result is a corporate-ready website that effectively communicates technical skills, design capabilities, and professional experience.",
+      "This professional portfolio demonstrates a cohesive visual identity, polished UX/UI, and interactive design powered by modern frontend technologies. Built with React, Vite, and Tailwind CSS, it integrates advanced animations, 3D elements, and distortion effects using Framer Motion, React‑Three‑Fiber, and react-fluid-distortion. The project features automated CI/CD deployment via GitHub Actions to GitHub Pages, ensuring seamless updates and professional deployment workflow.",
     projectAreas: [
       {
         name: "Visual & Interactive Design",
@@ -402,10 +402,9 @@ export const projectDetails: Record<string, Project> = {
       },
       {
         name: "Core Development & Architecture",
-        technologies: ["React", "React Router", "Vite"],
+        technologies: ["React", "React Router"],
         features: [
           "Component‑driven architecture",
-          "High‑performance build pipeline using Vite",
           "Structured navigation with React Router",
           "Reusable and scalable codebase",
           "Optimized project organization for maintainability",
@@ -417,7 +416,24 @@ export const projectDetails: Record<string, Project> = {
           "Efficiency in modern tooling",
         ],
       },
+      {
+        name: "Build & Deployment",
+        technologies: ["Vite", "GitHub Actions", "GitHub Pages"],
+        features: [
+          "High‑performance build pipeline using Vite",
+          "Automated CI/CD pipeline with GitHub Actions",
+          "Seamless deployment to GitHub Pages on every push",
+          "Automated testing and build verification",
+          "Professional deployment workflow with zero-downtime updates",
+        ],
+        softSkills: [
+          "DevOps automation mindset",
+          "Process optimization",
+          "Continuous delivery focus",
+          "Production deployment expertise",
+        ],
+      },
     ],
-    demoUrl: "/",
+    demoUrl: "https://sgonzaloc.github.io/portfolio-gonzalo-sanchezcano/",
   },
 };
