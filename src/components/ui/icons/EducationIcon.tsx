@@ -1,5 +1,13 @@
-// src/components/icons/EducationIcon.jsx
-export const EducationIcon = ({ className = "w-6 h-6 text-blue-600" }) => (
+// src/components/icons/EducationIcon.tsx
+import type { FC } from "react";
+
+interface EducationIconProps {
+  className?: string;
+}
+
+export const EducationIcon: FC<EducationIconProps> = ({
+  className = "w-6 h-6 text-blue-600",
+}) => (
   <svg
     className={className}
     fill="none"

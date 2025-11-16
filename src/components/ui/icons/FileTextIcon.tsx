@@ -1,5 +1,13 @@
-// src/components/ui/icons/FileTextIcon.jsx
-export const FileTextIcon = ({ className = "h-6 w-6 text-gray-500" }) => (
+// src/components/ui/icons/FileTextIcon.tsx
+import type { FC } from "react";
+
+interface FileTextIconProps {
+  className?: string;
+}
+
+export const FileTextIcon: FC<FileTextIconProps> = ({
+  className = "h-6 w-6 text-gray-500",
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"

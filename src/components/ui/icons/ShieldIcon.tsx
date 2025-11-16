@@ -1,5 +1,13 @@
-// src/components/icons/ShieldIcon.jsx
-export const ShieldIcon = ({ className = "w-6 h-6 text-green-600" }) => (
+// src/components/icons/ShieldIcon.tsx
+import type { FC } from "react";
+
+interface ShieldIconProps {
+  className?: string;
+}
+
+export const ShieldIcon: FC<ShieldIconProps> = ({
+  className = "w-6 h-6 text-green-600",
+}) => (
   <svg
     className={className}
     fill="none"

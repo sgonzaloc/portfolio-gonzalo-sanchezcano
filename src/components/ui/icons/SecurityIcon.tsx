@@ -1,5 +1,13 @@
-// src/components/icons/SecurityIcon.jsx
-export const SecurityIcon = ({ className = "w-5 h-5 text-blue-600" }) => (
+// src/components/icons/SecurityIcon.tsx
+import type { FC } from "react";
+
+interface SecurityIconProps {
+  className?: string;
+}
+
+export const SecurityIcon: FC<SecurityIconProps> = ({
+  className = "w-5 h-5 text-blue-600",
+}) => (
   <svg
     className={className}
     fill="none"

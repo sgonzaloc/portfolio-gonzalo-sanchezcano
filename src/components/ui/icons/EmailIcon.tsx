@@ -1,5 +1,13 @@
-// src/components/ui/icons/EmailIcon.jsx
-export const EmailIcon = ({ className = "h-5 w-5 text-gray-500" }) => (
+// src/components/ui/icons/EmailIcon.tsx
+import type { FC } from "react";
+
+interface EmailIconProps {
+  className?: string;
+}
+
+export const EmailIcon: FC<EmailIconProps> = ({
+  className = "h-5 w-5 text-gray-500",
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"

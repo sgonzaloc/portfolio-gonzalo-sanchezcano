@@ -1,5 +1,13 @@
-// src/components/ui/icons/LanguagesIcon.jsx
-export const LanguagesIcon = ({ className = "text-blue-600" }) => (
+// src/components/ui/icons/LanguagesIcon.tsx
+import type { FC } from "react";
+
+interface LanguagesIconProps {
+  className?: string;
+}
+
+export const LanguagesIcon: FC<LanguagesIconProps> = ({
+  className = "text-blue-600",
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="20"

@@ -1,5 +1,11 @@
-// src/components/ui/icons/FunIcon.jsx
-export const FunIcon = ({ className = "w-5 h-5" }) => (
+// src/components/ui/icons/FunIcon.tsx
+import type { FC } from "react";
+
+interface FunIconProps {
+  className?: string;
+}
+
+export const FunIcon: FC<FunIconProps> = ({ className = "w-5 h-5" }) => (
   <svg
     className={className}
     fill="none"

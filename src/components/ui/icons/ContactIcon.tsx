@@ -1,5 +1,13 @@
-// src/components/ui/icons/ContactIcon.jsx
-export const ContactIcon = ({ className = "text-blue-600" }) => (
+// src/components/ui/icons/ContactIcon.tsx
+import type { FC } from "react";
+
+interface ContactIconProps {
+  className?: string;
+}
+
+export const ContactIcon: FC<ContactIconProps> = ({
+  className = "text-blue-600",
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="20"

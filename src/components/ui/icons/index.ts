@@ -1,4 +1,4 @@
-// src/components/icons/index.js
+// src/components/icons/index.ts
 export { EducationIcon } from "./EducationIcon";
 export { LightningIcon } from "./LightningIcon";
 export { ShieldIcon } from "./ShieldIcon";

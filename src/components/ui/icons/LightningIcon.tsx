@@ -1,5 +1,13 @@
-// src/components/icons/LightningIcon.jsx
-export const LightningIcon = ({ className = "w-6 h-6 text-purple-600" }) => (
+// src/components/icons/LightningIcon.tsx
+import type { FC } from "react";
+
+interface LightningIconProps {
+  className?: string;
+}
+
+export const LightningIcon: FC<LightningIconProps> = ({
+  className = "w-6 h-6 text-purple-600",
+}) => (
   <svg
     className={className}
     fill="none"

@@ -1,5 +1,13 @@
-// src/components/ui/icons/LayersIcon.jsx
-export const LayersIcon = ({ className = "text-blue-600" }) => (
+// src/components/ui/icons/LayersIcon.tsx
+import type { FC } from "react";
+
+interface LayersIconProps {
+  className?: string;
+}
+
+export const LayersIcon: FC<LayersIconProps> = ({
+  className = "text-blue-600",
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="20"

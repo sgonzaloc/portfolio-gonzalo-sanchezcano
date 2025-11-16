@@ -1,5 +1,13 @@
-// src/components/ui/icons/ExternalLinkIcon.jsx
-export const ExternalLinkIcon = ({ className = "w-5 h-5" }) => (
+// src/components/ui/icons/ExternalLinkIcon.tsx
+import type { FC } from "react";
+
+interface ExternalLinkIconProps {
+  className?: string;
+}
+
+export const ExternalLinkIcon: FC<ExternalLinkIconProps> = ({
+  className = "w-5 h-5",
+}) => (
   <svg
     className={className}
     fill="none"

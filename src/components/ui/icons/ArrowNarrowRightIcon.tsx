@@ -1,5 +1,11 @@
-// src/components/ui/icons/ArrowNarrowLeftIcon.jsx
-export const ArrowNarrowLeftIcon = ({
+// src/components/ui/icons/ArrowNarrowRightIcon.tsx
+import type { FC } from "react";
+
+interface ArrowNarrowRightIconProps {
+  className?: string;
+}
+
+export const ArrowNarrowRightIcon: FC<ArrowNarrowRightIconProps> = ({
   className = "h-6 w-6 text-gray-500",
 }) => (
   <svg
@@ -15,7 +21,7 @@ export const ArrowNarrowLeftIcon = ({
     className={className}
   >
     <path d="M5 12l14 0"></path>
-    <path d="M5 12l4 4"></path>
-    <path d="M5 12l4 -4"></path>
+    <path d="M15 16l4 -4"></path>
+    <path d="M15 8l4 4"></path>
   </svg>
 );

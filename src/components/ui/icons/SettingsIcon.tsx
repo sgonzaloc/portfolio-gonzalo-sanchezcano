@@ -1,5 +1,13 @@
-// src/components/icons/SettingsIcon.jsx
-export const SettingsIcon = ({ className = "w-5 h-5 text-yellow-600" }) => (
+// src/components/icons/SettingsIcon.tsx
+import type { FC } from "react";
+
+interface SettingsIconProps {
+  className?: string;
+}
+
+export const SettingsIcon: FC<SettingsIconProps> = ({
+  className = "w-5 h-5 text-yellow-600",
+}) => (
   <svg
     className={className}
     fill="none"

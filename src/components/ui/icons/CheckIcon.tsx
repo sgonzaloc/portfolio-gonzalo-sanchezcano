@@ -1,5 +1,13 @@
-// src/components/ui/icons/CheckIcon.jsx
-export const CheckIcon = ({ className = "w-5 h-5 text-green-500" }) => (
+// src/components/ui/icons/CheckIcon.tsx
+import type { FC } from "react";
+
+interface CheckIconProps {
+  className?: string;
+}
+
+export const CheckIcon: FC<CheckIconProps> = ({
+  className = "w-5 h-5 text-green-500",
+}) => (
   <svg
     className={className}
     fill="none"

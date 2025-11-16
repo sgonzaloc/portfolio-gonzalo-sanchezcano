@@ -1,5 +1,13 @@
-// src/components/ui/icons/LocationIcon.jsx
-export const LocationIcon = ({ className = "h-5 w-5 text-gray-500" }) => (
+// src/components/ui/icons/LocationIcon.tsx
+import type { FC } from "react";
+
+interface LocationIconProps {
+  className?: string;
+}
+
+export const LocationIcon: FC<LocationIconProps> = ({
+  className = "h-5 w-5 text-gray-500",
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"

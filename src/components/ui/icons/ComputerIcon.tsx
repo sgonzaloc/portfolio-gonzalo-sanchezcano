@@ -1,5 +1,13 @@
-// src/components/icons/ComputerIcon.jsx
-export const ComputerIcon = ({ className = "w-5 h-5 text-red-600" }) => (
+// src/components/icons/ComputerIcon.tsx
+import type { FC } from "react";
+
+interface ComputerIconProps {
+  className?: string;
+}
+
+export const ComputerIcon: FC<ComputerIconProps> = ({
+  className = "w-5 h-5 text-red-600",
+}) => (
   <svg
     className={className}
     fill="none"

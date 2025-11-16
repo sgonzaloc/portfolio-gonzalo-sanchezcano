@@ -1,5 +1,13 @@
-// src/components/ui/icons/DownloadIcon.jsx
-export const DownloadIcon = ({ className = "h-5 w-5" }) => (
+// src/components/ui/icons/DownloadIcon.tsx
+import type { FC } from "react";
+
+interface DownloadIconProps {
+  className?: string;
+}
+
+export const DownloadIcon: FC<DownloadIconProps> = ({
+  className = "h-5 w-5",
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="24"

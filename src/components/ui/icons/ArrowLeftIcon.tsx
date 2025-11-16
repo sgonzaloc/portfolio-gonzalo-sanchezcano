@@ -1,5 +1,13 @@
-// src/components/ui/icons/ArrowLeftIcon.jsx
-export const ArrowLeftIcon = ({ className = "w-4 h-4" }) => (
+// src/components/ui/icons/ArrowLeftIcon.tsx
+import type { FC } from "react";
+
+interface ArrowLeftIconProps {
+  className?: string;
+}
+
+export const ArrowLeftIcon: FC<ArrowLeftIconProps> = ({
+  className = "w-4 h-4",
+}) => (
   <svg
     className={className}
     fill="none"

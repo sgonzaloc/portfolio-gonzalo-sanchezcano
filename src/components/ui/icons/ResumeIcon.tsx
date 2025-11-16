@@ -1,5 +1,13 @@
-// src/components/ui/icons/ResumeIcon.jsx
-export const ResumeIcon = ({ className = "text-blue-600" }) => (
+// src/components/ui/icons/ResumeIcon.tsx
+import type { FC } from "react";
+
+interface ResumeIconProps {
+  className?: string;
+}
+
+export const ResumeIcon: FC<ResumeIconProps> = ({
+  className = "text-blue-600",
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="20"

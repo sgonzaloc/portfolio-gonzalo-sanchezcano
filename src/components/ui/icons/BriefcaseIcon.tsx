@@ -1,5 +1,13 @@
-// src/components/ui/icons/BriefcaseIcon.jsx
-export const BriefcaseIcon = ({ className = "text-blue-600" }) => (
+// src/components/ui/icons/BriefcaseIcon.tsx
+import type { FC } from "react";
+
+interface BriefcaseIconProps {
+  className?: string;
+}
+
+export const BriefcaseIcon: FC<BriefcaseIconProps> = ({
+  className = "text-blue-600",
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="20"

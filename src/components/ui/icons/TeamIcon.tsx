@@ -1,5 +1,13 @@
-// src/components/icons/TeamIcon.jsx
-export const TeamIcon = ({ className = "w-5 h-5 text-green-600" }) => (
+// src/components/icons/TeamIcon.tsx
+import type { FC } from "react";
+
+interface TeamIconProps {
+  className?: string;
+}
+
+export const TeamIcon: FC<TeamIconProps> = ({
+  className = "w-5 h-5 text-green-600",
+}) => (
   <svg
     className={className}
     fill="none"

@@ -1,5 +1,13 @@
-// src/components/icons/NetworkIcon.jsx
-export const NetworkIcon = ({ className = "w-5 h-5 text-blue-600" }) => (
+// src/components/icons/NetworkIcon.tsx
+import type { FC } from "react";
+
+interface NetworkIconProps {
+  className?: string;
+}
+
+export const NetworkIcon: FC<NetworkIconProps> = ({
+  className = "w-5 h-5 text-blue-600",
+}) => (
   <svg
     className={className}
     fill="none"

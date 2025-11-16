@@ -1,5 +1,11 @@
-// src/components/ui/icons/HomeIcon.jsx
-export const HomeIcon = ({ className = "w-5 h-5" }) => (
+// src/components/ui/icons/HomeIcon.tsx
+import type { FC } from "react";
+
+interface HomeIconProps {
+  className?: string;
+}
+
+export const HomeIcon: FC<HomeIconProps> = ({ className = "w-5 h-5" }) => (
   <svg
     className={className}
     fill="none"

@@ -1,5 +1,13 @@
-// src/components/ui/icons/UserIcon.jsx
-export const UserIcon = ({ className = "text-blue-600" }) => (
+// src/components/ui/icons/UserIcon.tsx
+import type { FC } from "react";
+
+interface UserIconProps {
+  className?: string;
+}
+
+export const UserIcon: FC<UserIconProps> = ({
+  className = "text-blue-600",
+}) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="20"
