@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
@@ -11,7 +11,7 @@ import Languages from "./pages/Languages";
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/skills" element={<Skills />} />
@@ -23,7 +23,7 @@ function App() {
         <Route path="/projects/:projectId" element={<ProjectDetail />} />,
         <Route path="/Languages" element={<Languages />} />,
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
