@@ -9,7 +9,7 @@ function Fun() {
       <div className="min-h-screen text-gray-900 transition-colors">
         <div className="relative">
           {/* Main Content */}
-          <div className="container mx-auto max-w-3xl flex flex-col px-4 py-8">
+          <div className="container mx-auto max-w-4xl flex flex-col px-4 py-8">
             {/* Main Card */}
             <div className="mb-8 w-full rounded-xl border-none shadow-none bg-white">
               <div className="flex flex-col space-y-6 p-6">
@@ -47,23 +47,23 @@ function Fun() {
                     </div>
                   ))}
                 </div>
+                {/* Inspirational Text */}
+                <div className="prose text-lg text-gray-600">
+                  <p>
+                    What excites me most as a software engineer is the
+                    opportunity to create solutions that truly solve a problem.
+                    Unlike products you can simply buy off the shelf, real
+                    software solutions often need to be designed and built to
+                    address a specific need. Every project brings new
+                    challenges, and I embrace these challenges with enthusiasm,
+                    combining technical expertise with creativity and careful
+                    analysis. My goal is to deliver solutions that are not only
+                    reliable and innovative but also make a meaningful
+                    difference for clients, helping them bring their software
+                    visions to life.
+                  </p>
+                </div>
               </div>
-            </div>
-
-            {/* Inspirational Text */}
-            <div className="prose text-lg text-gray-600">
-              <p>
-                What excites me most as a software engineer is the opportunity
-                to create solutions that truly solve a problem. Unlike products
-                you can simply buy off the shelf, real software solutions often
-                need to be designed and built to address a specific need. Every
-                project brings new challenges, and I embrace these challenges
-                with enthusiasm, combining technical expertise with creativity
-                and careful analysis. My goal is to deliver solutions that are
-                not only reliable and innovative but also make a meaningful
-                difference for clients, helping them bring their software
-                visions to life.
-              </p>
             </div>
           </div>
         </div>

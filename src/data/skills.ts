@@ -14,6 +14,7 @@ export const frontendSkills = [
   "Bootstrap",
   "GWT",
   "Android",
+  "Marvel App",
 ];
 
 export const backendSkills = [
@@ -22,23 +23,25 @@ export const backendSkills = [
   "Python",
   "Java",
   "PHP",
-  "REST APIs",
-  "SOAP",
   "Microservices",
   "MongoDB",
   "PostgreSQL",
   "MySQL",
   "SQL Server",
-  "Redis",
   "Django",
   "Apache Tomcat",
-  "API Integration",
+  "CLI Development",
+];
+
+export const apiSkills = [
+  "REST Web Services",
+  "SOAP Web Services",
   "Payment APIs (Adyen)",
   "Mapping APIs (Mapbox, Baidu)",
   "Jira/GitLab/Slack APIs",
   "Chrome Extensions",
-  "CLI Development",
-  "Web Services",
+  "API Integration",
+  "ODBC",
 ];
 
 export const aiSkills = [
@@ -51,7 +54,6 @@ export const aiSkills = [
   "Scikit-learn",
   "Data Analysis",
   "Natural Language Processing",
-  "Computer Vision",
 ];
 
 export const devopsSkills = [
@@ -65,7 +67,9 @@ export const devopsSkills = [
   "Windows Server",
   "Bash Scripting",
   "CI/CD",
-  "Monitoring",
+  "Cloud Computing",
+  "Crontab",
+  "Active Directory",
 ];
 
 export const testingSkills = [
@@ -75,6 +79,30 @@ export const testingSkills = [
   "Unit Testing",
   "Integration Testing",
   "Quality Assurance",
+  "Valgrind",
+];
+
+export const analyticsSkills = [
+  "Mixpanel",
+  "Monitoring",
+  "Business Intelligence",
+  "Data Visualization",
+];
+
+export const dataEngineeringSkills = [
+  "Data Warehousing",
+  "ETL Pipelines",
+  "SQL Optimization",
+  "PL/SQL",
+  "Jasper Reports",
+];
+
+export const documentationSkills = [
+  "Swagger",
+  "UML",
+  "Software Engineering Diagrams",
+  "Technical Documentation",
+  "Lokalise",
 ];
 
 export const toolsSkills = [
@@ -83,115 +111,86 @@ export const toolsSkills = [
   "Jira",
   "Confluence",
   "Figma",
-  "Swagger",
   "Scrum",
   "Kanban",
   "Agile Methodology",
-  "UML",
   "OOP",
+  "Team Viewer",
+  "MS Office",
+  "MS Access",
+  "FileZilla",
+  "Microsoft Project",
+  "Meld",
 ];
 
-export const dataEngineeringSkills = [
-  "Data Warehousing",
-  "ETL Pipelines",
-  "Business Intelligence",
-  "Data Visualization",
-  "SQL Optimization",
-  "PL/SQL",
-  "Jasper Reports",
+export const engineeringConceptsSkills = [
+  "Object-oriented Programming",
+  "Servlets",
+  "IVR",
+  "CRM",
+  "Sockets",
+  "DNS",
+  "DAO",
+  "XML",
+  "Joomla",
+  "Web Scraping",
 ];
 
-export const communicationSkills = [
-  "Spanish (Native)",
-  "English (Advanced)",
-  "French (Advanced)",
-  "Italian (Advanced)",
-  "Technical Documentation",
-  "Team Collaboration",
+export const idesSkills = [
+  "Eclipse",
+  "Pycharm",
+  "SublimeText",
+  "Android Studio",
+  "Pharo",
 ];
 
-export const integrationSkills = [
-  "Jira API Integration",
-  "GitLab API Integration",
-  "Slack API & Bot Development",
-  "Chrome Extension Development",
-  "CLI Tools with OCLIF",
-  "Cross-platform Development",
-  "Automation Scripting",
-];
+export const operatingSystemsSkills = ["Windows", "Linux", "MacOS"];
 
-export const industrySkills = [
-  "Shared Mobility Platforms",
-  "Payment Systems Integration",
-  "Mapping & Geolocation Services",
-  "E-commerce & Online Sales",
-  "Financial Systems",
+export const industries = [
+  "FinTech & Trading Platforms",
+  "Transportation & Shared Mobility",
+  "Project & Business Management Tools",
   "Telecommunications",
-  "Business Intelligence Tools",
+  "Banking & Finance",
+  "Insurance & Risk Management",
+  "E-Commerce / Online Retail",
+  "Social Networking / Event Platforms",
 ];
 
 export const skillSets = {
   frontend: frontendSkills,
   backend: backendSkills,
+  api: apiSkills,
   ai: aiSkills,
   devops: devopsSkills,
   testing: testingSkills,
-  tools: toolsSkills,
+  analytics: analyticsSkills,
   dataEngineering: dataEngineeringSkills,
-  communication: communicationSkills,
-  integration: integrationSkills,
-  industry: industrySkills,
+  documentation: documentationSkills,
+  tools: toolsSkills,
+  engineeringConcepts: engineeringConceptsSkills,
+  ides: idesSkills,
+  operatingSystems: operatingSystemsSkills,
+  industries: industries,
 };
 
 export const skillCategories = [
+  { name: "Frontend Development", icon: "🖥️", skills: frontendSkills },
+  { name: "Backend Development", icon: "⚙️", skills: backendSkills },
+  { name: "APIs & Web Services", icon: "🔗", skills: apiSkills },
+  { name: "AI & Data Science", icon: "🧠", skills: aiSkills },
+  { name: "DevOps & Infrastructure", icon: "☁️", skills: devopsSkills },
+  { name: "Testing & Quality", icon: "✅", skills: testingSkills },
+  { name: "Analytics & Monitoring", icon: "📈", skills: analyticsSkills },
+  { name: "Data Engineering & BI", icon: "📊", skills: dataEngineeringSkills },
+  { name: "Documentation & Design", icon: "📝", skills: documentationSkills },
+  { name: "Development Tools & Methods", icon: "🛠️", skills: toolsSkills },
   {
-    name: "Frontend Development",
-    icon: "🖥️", // podés poner tu SVG
-    skills: frontendSkills,
+    name: "Software Engineering Concepts",
+    icon: "💡",
+    skills: engineeringConceptsSkills,
   },
-  {
-    name: "Backend & API Development",
-    icon: "🖧", // podés poner tu SVG
-    skills: backendSkills,
-  },
-  {
-    name: "AI & Data Science",
-    icon: "🧠",
-    skills: aiSkills,
-  },
-  {
-    name: "DevOps & Infrastructure",
-    icon: "☁️",
-    skills: devopsSkills,
-  },
-  {
-    name: "Testing & Quality",
-    icon: "✅",
-    skills: testingSkills,
-  },
-  {
-    name: "Development Tools & Methods",
-    icon: "⚙️",
-    skills: toolsSkills,
-  },
-  {
-    name: "Data Engineering & BI",
-    icon: "📊",
-    skills: dataEngineeringSkills,
-  },
-  {
-    name: "Languages & Communication",
-    icon: "💬",
-    skills: communicationSkills,
-  },
-  {
-    name: "Project Management & Tools Integration",
-    icon: "🔗",
-    skills: integrationSkills,
-  },
-  {
-    name: "Industry-Specific Solutions",
-    icon: "🏢",
-    skills: industrySkills,
-  },
+  { name: "IDEs", icon: "⌨️", skills: idesSkills },
+  { name: "Operating Systems", icon: "💻", skills: operatingSystemsSkills },
+  { name: "Industries", icon: "🏭", skills: industries },
 ];

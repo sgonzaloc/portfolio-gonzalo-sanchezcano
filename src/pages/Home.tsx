@@ -3,6 +3,7 @@ import PageLayout from "../components/layout/PageLayout";
 import imgMeAvatar from "../assets/me/avatar.png";
 import { navigationItems } from "../data/navigationItems";
 import { ArrowRightIcon } from "../components/ui/icons";
+import { experienceStats } from "../data/experienceStats";
 
 function Home() {
   const navigate = useNavigate();
@@ -60,44 +61,17 @@ function Home() {
 
                 {/* Stats Grid with exact colors and values */}
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-8">
-                  <div className="text-center">
-                    <div className="text-2xl md:text-3xl font-bold text-blue-600 mb-2">
-                      15+
+                  {experienceStats.map((stat, index) => (
+                    <div key={index} className="text-center">
+                      <div
+                        className={`text-2xl md:text-3xl font-bold mb-2`}
+                        style={{ color: stat.color }}
+                      >
+                        {stat.value}
+                      </div>
+                      <div className="text-gray-700 text-sm">{stat.label}</div>
                     </div>
-                    <div className="text-gray-700 text-sm">
-                      Years Experience
-                    </div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl md:text-3xl font-bold text-green-600 mb-2">
-                      30+
-                    </div>
-                    <div className="text-gray-700 text-sm">Projects</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl md:text-3xl font-bold text-purple-600 mb-2">
-                      70+
-                    </div>
-                    <div className="text-gray-700 text-sm">Technologies</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl md:text-3xl font-bold text-indigo-600 mb-2">
-                      10
-                    </div>
-                    <div className="text-gray-700 text-sm">Expertise Areas</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl md:text-3xl font-bold text-amber-600 mb-2">
-                      10
-                    </div>
-                    <div className="text-gray-700 text-sm">Industries</div>
-                  </div>
-                  <div className="text-center">
-                    <div className="text-2xl md:text-3xl font-bold text-cyan-600 mb-2">
-                      4+
-                    </div>
-                    <div className="text-gray-700 text-sm">Languages</div>
-                  </div>
+                  ))}
                 </div>
               </div>
             </div>

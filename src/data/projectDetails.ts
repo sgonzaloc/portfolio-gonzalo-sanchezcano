@@ -167,6 +167,7 @@ export const projectDetails: Record<string, Project> = {
           "React Testing Library",
           "Jest",
           "Storybook",
+          "Mixpanel",
         ],
         features: [
           "Interactive and responsive UI for multiple platforms",
@@ -174,6 +175,7 @@ export const projectDetails: Record<string, Project> = {
           "Reusable components and design system with Material UI",
           "Unit and integration testing with Jest and React Testing Library",
           "Localization and i18n/l10n support",
+          "User behavior tracking and event analytics with Mixpanel",
         ],
         softSkills: [
           "Collaboration across multiple teams",
@@ -189,11 +191,14 @@ export const projectDetails: Record<string, Project> = {
           "Real-time data visualization for vehicles and trips",
           "Map integration with Mapbox and Baidu APIs",
           "Custom map layers and markers for route tracking",
+          "Product analytics implementation for user behavior insights",
+          "Conversion funnel analysis and feature adoption tracking",
         ],
         softSkills: [
           "Analytical thinking",
           "Creative problem-solving",
           "Data interpretation and visualization",
+          "Business metrics awareness",
         ],
       },
       {
