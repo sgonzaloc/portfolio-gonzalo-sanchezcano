@@ -6,6 +6,9 @@ import {
   ExternalLinkIcon,
   CheckIcon,
 } from "../components/ui/icons";
+import EmblaCarousel from "../components/ui/EmblaCarousel";
+import type { EmblaOptionsType } from "embla-carousel";
+const OPTIONS: EmblaOptionsType = { loop: true };
 
 const ProjectDetail: React.FC = () => {
   const { projectId } = useParams<{ projectId: string }>();
@@ -36,11 +39,7 @@ const ProjectDetail: React.FC = () => {
           {/* Project Header */}
           <div className="bg-white rounded-3xl overflow-hidden shadow-lg mb-8">
             <div className="relative h-96">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-full object-cover object-center"
-              />
+              <EmblaCarousel options={OPTIONS} images={project.images} />
               <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_0%,transparent_50%,transparent_60%,rgba(23,37,84,0.6)_80%,rgba(23,37,84,0.9)_100%)]" />
               <div className="absolute bottom-8 left-8 text-white text-shadow-lg break-words text-lg whitespace-pre-wrap text-gray-900 font-extrabold [text-shadow:1px_1px_0px_#f3f4f6,3px_3px_0px_#e5e7eb,5px_5px_0px_#d1d5db,7px_7px_0px_#9ca3af]">
                 <span className="bg-blue-600 px-3 py-1 rounded-full text-sm font-medium">

@@ -1,6 +1,10 @@
-import imgProject1 from "../assets/projects/project1.png";
-import imgProject2 from "../assets/project_details/project2.png";
-import imgProject3 from "../assets/projects/project3.png";
+import project3_1 from "../assets/project_details/project3_1.png";
+import project3_2 from "../assets/project_details/project3_2.png";
+import project3_3 from "../assets/project_details/project3_3.png";
+import project3_4 from "../assets/project_details/project3_4.png";
+import project3_5 from "../assets/project_details/project3_5.png";
+import project3_6 from "../assets/project_details/project3_6.png";
+import project3_7 from "../assets/project_details/project3_7.png";
 import imgProject4 from "../assets/project_details/project4.png";
 import imgProject5 from "../assets/projects/project5.png";
 
@@ -14,7 +18,7 @@ interface ProjectArea {
 interface Project {
   title: string;
   category: string;
-  image: string;
+  images: string[];
   description: string;
   longDescription: string;
   projectAreas: ProjectArea[];
@@ -25,7 +29,15 @@ export const projectDetails: Record<string, Project> = {
   "trader-charts": {
     title: "Trader Charts",
     category: "FinTech",
-    image: imgProject1,
+    images: [
+      "https://raw.githubusercontent.com/TraderCharts/.github/refs/heads/main/profile/assets/img/readme/auth0_login.png",
+      "https://raw.githubusercontent.com/TraderCharts/.github/refs/heads/main/profile/assets/img/readme/charts_section.png",
+      "https://raw.githubusercontent.com/TraderCharts/.github/refs/heads/main/profile/assets/img/readme/trading-news-main-topics.png",
+      "https://raw.githubusercontent.com/TraderCharts/.github/refs/heads/main/profile/assets/img/readme/trading-news-sentiment-analysis.png",
+      "https://raw.githubusercontent.com/TraderCharts/.github/refs/heads/main/profile/assets/img/readme/karios-ai.png",
+      "https://raw.githubusercontent.com/TraderCharts/.github/refs/heads/main/profile/assets/img/readme/gann_fans_ic.png",
+      "https://raw.githubusercontent.com/TraderCharts/.github/refs/heads/main/profile/assets/img/readme/indicator_details_2.png",
+    ],
     description:
       "Interactive open-source platform for technical analysis of large-scale, cross-market ecosystems",
     longDescription:
@@ -143,7 +155,17 @@ export const projectDetails: Record<string, Project> = {
   vulog: {
     title: "Vulog - Shared Mobility Solutions",
     category: "Shared Mobility",
-    image: imgProject2,
+    images: [
+      "https://www.vulog.com/wp-content/webp-express/webp-images/uploads/2024/04/smart_management_tools-1.png.webp",
+      "https://www.vulog.com/wp-content/webp-express/webp-images/uploads/2024/04/product-highlights-digitalrental.png.webp",
+      "https://www.vulog.com/wp-content/webp-express/webp-images/uploads/2024/04/website_BO_calendar.png.webp",
+      "https://www.vulog.com/wp-content/webp-express/webp-images/uploads/2024/04/BO_vehicle_and_damages.png.webp",
+      "https://www.vulog.com/wp-content/webp-express/webp-images/uploads/2024/04/evolve_your_offer_and_reach.png.webp",
+      "https://www.vulog.com/wp-content/webp-express/webp-images/uploads/2024/04/corporate_1.png.webp",
+      "https://www.vulog.com/wp-content/webp-express/webp-images/uploads/2024/06/website_vehiclegateway_res.png.webp",
+      "https://www.vulog.com/wp-content/webp-express/webp-images/uploads/2024/04/website_fleet_manager.png.webp",
+      "https://www.vulog.com/wp-content/webp-express/webp-images/uploads/2024/06/website_vulog_fleetconsole_res.png.webp",
+    ],
     description:
       "Multiple website platforms providing a unified solution for shared mobility services",
     longDescription:
@@ -224,7 +246,15 @@ export const projectDetails: Record<string, Project> = {
   "ai-llm-training": {
     title: "Multilingual BERT Adaptation for Low-Resource Languages",
     category: "AI Research",
-    image: imgProject3,
+    images: [
+      project3_1,
+      project3_2,
+      project3_3,
+      project3_4,
+      project3_5,
+      project3_6,
+      project3_7,
+    ],
     description:
       "Scientific research on adapting multilingual BERT to low-resource language and task scenarios",
     longDescription:
@@ -301,7 +331,14 @@ export const projectDetails: Record<string, Project> = {
   "nixtla-monitoring-platform": {
     title: "Nixtla - GitHub Monitor & Pip Observability",
     category: "DevOps & Monitoring",
-    image: imgProject4,
+    images: [
+      "https://raw.githubusercontent.com/sgonzaloc/github-monitoring-and-observability-webapp/refs/heads/main/docs/img/dashboardexpanded.png",
+      "https://raw.githubusercontent.com/sgonzaloc/github-monitoring-and-observability-webapp/refs/heads/main/docs/img/dashboardstarshiddingheader.png",
+      "https://raw.githubusercontent.com/sgonzaloc/github-monitoring-and-observability-webapp/refs/heads/main/docs/img/downloadsforecasts.png",
+      "https://raw.githubusercontent.com/sgonzaloc/github-monitoring-and-observability-webapp/refs/heads/main/docs/img/messagesinfo.png",
+      "https://raw.githubusercontent.com/sgonzaloc/github-monitoring-and-observability-webapp/refs/heads/main/docs/img/messagesnostars.png",
+      "https://raw.githubusercontent.com/sgonzaloc/github-monitoring-and-observability-webapp/refs/heads/main/docs/img/stars.png",
+    ],
     description:
       "Comprehensive monitoring and observability platform for GitHub repositories and Python package management",
     longDescription:
@@ -377,7 +414,7 @@ export const projectDetails: Record<string, Project> = {
   "professional-portfolio": {
     title: "Professional Portfolio",
     category: "Branding & Professional Design",
-    image: imgProject5,
+    images: [imgProject5],
     description:
       "A fully branded portfolio website showcasing a coherent visual identity, modern UI, and professional-level presentation.",
     longDescription:
