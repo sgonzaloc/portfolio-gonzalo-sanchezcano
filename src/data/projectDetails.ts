@@ -5,7 +5,6 @@ import project3_4 from "../assets/project_details/project3_4.png";
 import project3_5 from "../assets/project_details/project3_5.png";
 import project3_6 from "../assets/project_details/project3_6.png";
 import project3_7 from "../assets/project_details/project3_7.png";
-import imgProject4 from "../assets/project_details/project4.png";
 import imgProject5 from "../assets/projects/project5.png";
 
 interface ProjectArea {
