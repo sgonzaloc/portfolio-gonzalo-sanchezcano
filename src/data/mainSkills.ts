@@ -2,12 +2,16 @@ export const hardSkills = [
   "React",
   "Node.js",
   "Python",
+  "Deep Learning",
   "TypeScript",
-  "AI/ML",
+  "Javascript",
+  "Machine Learning",
   "SQL/MongoDB",
-  "DevOps",
+  "Continuous Integration",
+  "Continuous Deployment",
   "Cloud Architecture",
   "Microservices",
+  "API Integrations",
 ];
 
 export const leadershipSoftSkills = [
