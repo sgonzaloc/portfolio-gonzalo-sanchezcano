@@ -3,8 +3,17 @@ import imgProject2 from "../assets/projects/project2.png";
 import imgProject3 from "../assets/projects/project3.png";
 import imgProject4 from "../assets/projects/project4.png";
 import imgProject5 from "../assets/projects/project5.png";
+import imgProject6 from "../assets/projects/project6.png";
 
 export const projects = [
+  {
+    id: "vulcan",
+    category: "Web Design & Development",
+    title: "Vulcan",
+    image: imgProject6,
+    description:
+      "Modern website design and development with a focus on clarity, typography, and user experience.",
+  },
   {
     id: "trader-charts",
     category: "FinTech",

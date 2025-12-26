@@ -6,6 +6,7 @@ import project3_5 from "../assets/project_details/project3_5.png";
 import project3_6 from "../assets/project_details/project3_6.png";
 import project3_7 from "../assets/project_details/project3_7.png";
 import imgProject5 from "../assets/projects/project5.png";
+import imgProject6 from "../assets/projects/project6.png";
 
 interface ProjectArea {
   name: string;
@@ -476,5 +477,79 @@ export const projectDetails: Record<string, Project> = {
       },
     ],
     demoUrl: "https://sgonzaloc.github.io/portfolio-gonzalo-sanchezcano/",
+  },
+  vulcan: {
+    title: "Vulcan",
+    category: "Web Design & Development",
+    images: [imgProject6],
+    description:
+      "Modern website design and development with a focus on clarity, typography, and user experience.",
+    longDescription:
+      "Vulcan is a modern web project delivering a clean, tech-oriented visual identity with a smooth and intuitive user experience. The website was developed using React and TypeScript for frontend interactivity, Tailwind CSS for styling, and Next.js for full-stack capabilities, including server-side rendering (SSR), static site generation (SSG), and API routes. Node.js runs under the hood, powering server-side functionality. Subtle animations with Framer Motion and AOS enhance usability, creating a polished and professional digital presence.",
+    projectAreas: [
+      {
+        name: "UI Design & User Experience",
+        technologies: ["Tailwind CSS", "Framer Motion", "AOS Animations"],
+        features: [
+          "Clean and minimal visual design",
+          "Strong typographic hierarchy",
+          "Smooth scroll-based and interaction animations",
+          "Responsive layouts optimized for all devices",
+          "Balanced use of motion to enhance usability",
+        ],
+        softSkills: [
+          "User-centered design thinking",
+          "Visual hierarchy and clarity",
+          "Attention to detail",
+          "Consistency in design systems",
+        ],
+      },
+      {
+        name: "Frontend Development",
+        technologies: ["React", "TypeScript"],
+        features: [
+          "Component-based architecture",
+          "Reusable and maintainable code",
+          "Interactive UI with TypeScript type safety",
+          "Optimized rendering and performance",
+        ],
+        softSkills: [
+          "Clean code practices",
+          "Logical component abstraction",
+          "Problem solving",
+          "Frontend architecture planning",
+        ],
+      },
+      {
+        name: "Full-Stack Development",
+        technologies: ["Next.js"],
+        features: [
+          "Server-side rendering (SSR) and static site generation (SSG)",
+          "API routes enabling backend functionality",
+          "Integration of frontend and backend capabilities",
+          "Optimized project structure for maintainability and performance",
+        ],
+        softSkills: [
+          "Full-stack architectural thinking",
+          "Integration of frontend with backend features",
+          "Performance-conscious development",
+        ],
+      },
+      {
+        name: "Animations & Interactions",
+        technologies: ["Framer Motion", "AOS Animations"],
+        features: [
+          "Smooth page and component transitions",
+          "Scroll-triggered animations for enhanced engagement",
+          "Micro-interactions improving user feedback",
+          "Performance-conscious animation implementation",
+        ],
+        softSkills: [
+          "Motion design sensibility",
+          "UX-focused animation decisions",
+          "Creative interaction design",
+        ],
+      },
+    ],
   },
 };
