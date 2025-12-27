@@ -485,7 +485,7 @@ export const projectDetails: Record<string, Project> = {
     description:
       "Modern website design and development with a focus on clarity, typography, and user experience.",
     longDescription:
-      "Vulcan is a modern web project delivering a clean, tech-oriented visual identity with a smooth and intuitive user experience. The website was developed using React and TypeScript for frontend interactivity, Tailwind CSS for styling, and Next.js for full-stack capabilities, including server-side rendering (SSR), static site generation (SSG), and API routes. Node.js runs under the hood, powering server-side functionality. Subtle animations with Framer Motion and AOS enhance usability, creating a polished and professional digital presence.",
+      "Vulcan is a modern web project delivering a clean, tech-oriented visual identity with an intuitive user experience. Developed using React and TypeScript for frontend interactivity, Next.js for full-stack capabilities, and Node.js for backend workflows, including automated emails supporting customer acquisition.",
     projectAreas: [
       {
         name: "UI Design & User Experience",
@@ -493,9 +493,8 @@ export const projectDetails: Record<string, Project> = {
         features: [
           "Clean and minimal visual design",
           "Strong typographic hierarchy",
-          "Smooth scroll-based and interaction animations",
-          "Responsive layouts optimized for all devices",
-          "Balanced use of motion to enhance usability",
+          "Smooth animations enhancing usability",
+          "Responsive layouts for all devices",
         ],
         softSkills: [
           "User-centered design thinking",
@@ -510,8 +509,9 @@ export const projectDetails: Record<string, Project> = {
         features: [
           "Component-based architecture",
           "Reusable and maintainable code",
-          "Interactive UI with TypeScript type safety",
-          "Optimized rendering and performance",
+          "Interactive UI with type safety",
+          "Integration with backend APIs",
+          "Supports dark and light modes",
         ],
         softSkills: [
           "Clean code practices",
@@ -524,15 +524,27 @@ export const projectDetails: Record<string, Project> = {
         name: "Full-Stack Development",
         technologies: ["Next.js"],
         features: [
-          "Server-side rendering (SSR) and static site generation (SSG)",
-          "API routes enabling backend functionality",
-          "Integration of frontend and backend capabilities",
-          "Optimized project structure for maintainability and performance",
+          "Built scalable frontend-backend applications",
+          "Server-side rendering (SSR) and static pages (SSG)",
+          "Developed maintainable API routes",
+          "Supports multiple languages (internationalization)",
         ],
         softSkills: [
           "Full-stack architectural thinking",
-          "Integration of frontend with backend features",
-          "Performance-conscious development",
+          "Collaboration across frontend and backend",
+          "Problem-solving in complex applications",
+        ],
+      },
+      {
+        name: "Backend Development",
+        technologies: ["Node.js", "Nodemailer"],
+        features: [
+          "Supported customer acquisition workflows using automated emails",
+          "Handled server-side logic to process user interactions",
+        ],
+        softSkills: [
+          "Practical backend implementation",
+          "Focus on usability and workflow",
         ],
       },
       {
@@ -540,9 +552,8 @@ export const projectDetails: Record<string, Project> = {
         technologies: ["Framer Motion", "AOS Animations"],
         features: [
           "Smooth page and component transitions",
-          "Scroll-triggered animations for enhanced engagement",
+          "Scroll-triggered animations for better engagement",
           "Micro-interactions improving user feedback",
-          "Performance-conscious animation implementation",
         ],
         softSkills: [
           "Motion design sensibility",
